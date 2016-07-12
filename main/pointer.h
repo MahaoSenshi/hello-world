@@ -1,6 +1,6 @@
 //This is a simple file with small description for a "pointers" functionality
-
-#include <stdio.h>
+#ifndef POINTER
+#define POINTER
 
 void GetPointerDescribe() {
     int var = 10;
@@ -56,3 +56,4 @@ void GetSimpleExample2() {
         pnt_void = pnt_void + sizeof(char);
     }
 }
+#endif // POINTER
