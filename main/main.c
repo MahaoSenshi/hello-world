@@ -1,23 +1,21 @@
 //helloWorld.c
-
-#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
 #include "pointer.h"
-
-using namespace std;
 
 //"Hello World!\n" as a simple output
 void simpleOuter() { 
-  cout << "-------Pointer overview-------"\n; 
-  cout << "-------Pointer Describe-------\n";
+  printf("-------Pointer overview-------\n");
+  printf("-------Pointer Describe-------\n");
   GetPointerDescribe();
-  cout << "-------Simple Example 1-------\n";
+  printf("-------Simple Example 1-------\n");
   GetSimpleExample();
-  cout << "-------Simple Example 2-------\n";
+  printf("-------Simple Example 2-------\n");
   GetSimpleExample2();
 }
 
 //startup project
-main () {
+int main () {
   simpleOuter();
   return 0;
 }
